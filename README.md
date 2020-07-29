@@ -63,7 +63,7 @@ This feature can be accessed by hovering or clicking your profile avatar. Your p
 - **Template**: Shows you a sample portfolio template meant as guidelines for writing your portfolio as well as showcasing a few features of Markdown
 - **Help**: Redirects you to a Markdown Cheatsheet reference page.
 
-### User Feedback
+### User Acceptance Testing
 We asked our ex-classmates and some international friends on Discord for their opinions on our Milestone 2 version of the website. We gladly made use of their feedback expressing their ideas to improve on our website for the Milestone 3. Here are some parts of the reviews obtained that we deem constructive:
 
 After Milestone 2, we continued improving the design and the features of the website. In fact, we even redesigned it and Zong Yu decided to make the website light theme instead to make the design look more vibrant. However, a Discord friend mentioned about how he dislikes light theme and proposes to bring back dark theme, like in Milestone 2. Because of this, we added a theme selector so users are free to choose which theme they prefer. \
