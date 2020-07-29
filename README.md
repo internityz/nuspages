@@ -17,6 +17,18 @@ NUSPages is a website meant to blend the features of [**LinkedIn**](https://www.
   - Keep track of your portfolio and print them (as PDF) on demand.
 - [Theme Selector](#theme-selector)
   - Select between light or dark theme for your webpage.
+## Technology Stack Implementation
+#### Web Server
+The web server is initialised with React as well as Express. We are using React to serve the front-end components of NUSPages whereas Express is used to serve the back-end components of NUSPages (e.g. fetching data from MongoDB). Of course, every framework here is run under the Node.js runtime environment.
+
+#### Webpage Design
+We use HTML, CSS and JS - so trivial that we decided not to include these into our Technology Stack.
+
+#### Personalised Cards
+Initially, cards are fetched from MongoDB where users' cards are stored. After that, cards can be created, deleted, edited or reordered. All four actions will make requests to our Express web server where database queries will be sent to MongoDB to execute the respective action on the cards.
+
+#### Portfolio Generator
+Similarly, portfolio contents is fetched from MongoDB and can be saved to the database at any time. A few React packages come in useful to help show the preview of what markdown looks like before the portfolio is printed as PDF.
 
 ## User Manual
 ### Authentication
