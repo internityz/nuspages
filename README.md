@@ -15,8 +15,7 @@ NUSPages is a website meant to blend the features of [**LinkedIn**](https://www.
   - Fill your website with personalised cards, be it your profile card or your blog posts.
 - [Portfolio Generator](#portfolio-generator)
   - Keep track of your portfolio and print them (as PDF) on demand.
-- [Theme Selector](#theme-selector)
-  - Select between light or dark theme for your webpage.
+
 ## Technology Stack Implementation
 #### Web Server
 The web server is initialised with React as well as Express. We are using React to serve the front-end components of NUSPages whereas Express is used to serve the back-end components of NUSPages (e.g. fetching data from MongoDB). Of course, every framework here is run under the Node.js runtime environment.
@@ -28,7 +27,7 @@ We use HTML, CSS and JS - so trivial that we decided not to include these into o
 Initially, cards are fetched from MongoDB where users' cards are stored. After that, cards can be created, deleted, edited or reordered. All four actions will make requests to our Express web server where database queries will be sent to MongoDB to execute the respective action on the cards.
 
 #### Portfolio Generator
-Similarly, portfolio contents is fetched from MongoDB and can be saved to the database at any time. A few React packages come in useful to help show the preview of what markdown looks like before the portfolio is printed as PDF.
+Similarly, portfolio contents is fetched from MongoDB and can be saved to the database at any time. A few React packages come in useful to help show the preview of what markdown looks like before the portfolio is printed as PDF. The webpage will also call the print function of the native browser, where users can print their portfolio as PDF. Note that, because of this, mobile users will not be able to use this.
 
 ## User Manual
 ### Authentication
@@ -64,11 +63,6 @@ This feature can be accessed by hovering or clicking your profile avatar. Your p
 - **Template**: Shows you a sample portfolio template meant as guidelines for writing your portfolio as well as showcasing a few features of Markdown
 - **Help**: Redirects you to a Markdown Cheatsheet reference page.
 
-### Theme Selector
-This feature can be used by clicking on the Theme button found on the NavBar of the webpage. It switches between light mode and dark mode.
-- **Light Mode**: Colour scheme comprises of light blue and white.
-- **Dark Mode**: Colour scheme comprises of black, grey and white.
-
 ### User Feedback
 We asked our ex-classmates and some international friends on Discord for their opinions on our Milestone 2 version of the website. We gladly made use of their feedback expressing their ideas to improve on our website for the Milestone 3. Here are some parts of the reviews obtained that we deem constructive:
 
@@ -89,6 +83,6 @@ React projects highly rely on the concept of Object Oriented Programming and one
 \
 Our webpage is divided into components, each component representing a unique responsibility. For instance in the user page, instead of creating a huge component representing the user page, we divided the page into multiple components. We can name a few mainly "Profile" and "Cards". We believe that the Profile component should solely deal with the identity of the users (e.g. avatar, faculty background, about me bio, etc.) which can hopefully be fetched from NUSNET ID authentication. On the other hand, Cards is created just to cater to the creating, deleting and editing cards, something that has nothing to do with the users identity. \
 \
-We also make use of git as our main source code control software. This is because it is not rational to meet up and write code together. Also, since both of us have different ideas and approaches, we feel that using GitHub pull requests is the best way to handle this situation where we can review each other's changes and decide. Also, using a source code control like git allows us to revert changes especially when we decided to replace old features with a new one. Therefore, we set up a private repository on GitHub where we constantly push changes, commits by commits, branches by branches. 
+We also make use of git as our main source code control software. This is because it is not rational to meet up and write code together. Also, since both of us have different ideas and approaches, we feel that using GitHub pull requests is the best way to handle this situation where we can review each other's changes and decide. Also, using a source code control like git allows us to revert changes especially when we decided to replace old features with a new one. Therefore, we set up a private repository on GitHub where we constantly push changes, commits by commits, branches by branches. \
 \
 We believe that design diagrams is a very efficient way to explain how software works because a picture speaks a thousand words. Therefore, during Milestone 2, we planned to create a flowchart to picture our ideas better and clearer to each other. It also helps us think thoroughly first before actually writing the code. Our final flowchart can be seen [here](https://cdn.discordapp.com/attachments/437471715975757834/737320273199628419/unknown.png).
